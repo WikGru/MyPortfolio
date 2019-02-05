@@ -1,0 +1,163 @@
+.dark-primary-color {
+  background: #303f9f;
+}
+.default-primary-color {
+  background: #3f51b5;
+}
+.light-primary-color {
+  background: #afb6e9;
+}
+.text-primary-color {
+  color: #ffffff;
+}
+.accent-color {
+  background: #536dfe;
+}
+.primary-text-color {
+  color: #555555;
+}
+.secondary-text-color {
+  color: #9e9e9e;
+}
+.divider-color {
+  border-color: #bdbdbd;
+}
+
+.global {
+  margin: 8vw;
+  margin-top: 4vh;
+  width: 100vw auto;
+  box-shadow: 0px 8px 100px 0px rgba(81, 81, 81, 0.4);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+#education {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.eduTh {
+  /* width: 50%; */
+  width:42%;
+}
+
+.fabButton {
+  z-index: 50;
+  width: 40pt;
+  height: 40pt;
+  position: fixed;
+  border-radius: 100%;
+  bottom: 7%;
+  right: 3%;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #3f51b5;
+  height: 60px;
+  font-size: 16pt;
+  vertical-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+button:hover {
+  background-color: #303f9f;
+}
+button:active {
+  background-color: #3f51b5;
+}
+#scrollTop {
+  align-self: right;
+  position: fixed right;
+}
+
+#headToolbar {
+  box-shadow: 0px 8px 20px 0px rgba(51, 51, 51, 0.4);
+  position: fixed;
+  margin-left: -8px;
+  margin-right: 8vw;
+  display: inline-block;
+  width: 100vw;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.toolbar {
+  margin-left: -8px;
+  width: 100vw auto;
+  box-shadow: 0px 8px 20px 0px rgba(51, 51, 51, 0.4);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.toolbarBannerTop {
+  height: 10pt;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.toolbarBannerBody {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.toolbarContent {
+  left: 50%;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.toolbarMark {
+  color: #ffffff;
+  font-size: 16pt;
+}
+
+.toolbarInnerBannerTop {
+  height: 7pt;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.toolbarInnerBannerBody {
+  width: 100vw auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.toolbarInnerMark {
+  color: #ffffff;
+  font-size: 14pt;
+}
+
+#welcome {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 6vw;
+  text-align: justify;
+  table-layout: auto;
+  align-content: left;
+}
+
+#textWelcome {
+  padding-left: 4vw;
+}
+
+.CV_PDF {
+  margin-top: 15pt;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 15pt;
+  height: 830pt;
+  width: 80%;
+}
+
+.contactText {
+  align-self: center;
+  text-align: center;
+}

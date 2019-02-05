@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  doScroll(x) {
+    const element =  document.getElementById(x);
+    element.scrollIntoView();
+    window.scrollBy(0, -73);
+  }
+  gotoTop() {
+    window.scrollTo(0, 0);
+  }
 }

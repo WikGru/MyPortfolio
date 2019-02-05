@@ -1,20 +1,109 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div id="headToolbar" stickyThing mat-toolbar ng-controller="headerCtrl">
+  <div class="toolbar">
+    <div class="toolbarBannerTop dark-primary-color"></div>
+    <div class="toolbarBannerBody default-primary-color">
+      <div class="toolbarContent">
+        <button mat-raised-button (click)="doScroll('myProjects')">
+          My projects
+        </button>
+        <button mat-raised-button (click)="doScroll('CV_PL')">CV-PL</button>
+        <button mat-raised-button (click)="doScroll('CV_EN')">CV-EN</button>
+        <button mat-raised-button (click)="doScroll('contact')">
+          Contact
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<button mat-mini-fab class="fabButton" (click)="gotoTop()">
+  <img
+    src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDIyMC42ODIgMjIwLjY4MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjIwLjY4MiAyMjAuNjgyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBvbHlnb24gcG9pbnRzPSIxMTAuMzQxLDAgMTAuNjM5LDk5LjcwMyAzOC45MjQsMTI3Ljk4NiAxMTAuMzQxLDU2LjU2OCAxODEuNzU4LDEyNy45ODYgMjEwLjA0Myw5OS43MDMgICIgZmlsbD0iI0ZGRkZGRiIvPgoJPHBvbHlnb24gcG9pbnRzPSIxMTAuMzQxLDkyLjY5NSAxMC42MzksMTkyLjM5NiAzOC45MjQsMjIwLjY4MiAxMTAuMzQxLDE0OS4yNjQgMTgxLjc1OCwyMjAuNjgyIDIxMC4wNDMsMTkyLjM5NiAgIiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+  />
+</button>
+
+<div class="global">
+  <div id="welcome">
+    <br />
+    <table>
+      <tr>
+        <th>
+          <img src="https://i.ibb.co/QbCTSyB/CV-photo.png" alt="CV-photo" />
+        </th>
+        <th id="textWelcome" class="primary-text-color">
+          Wiktor Grudzina<br />Software programist, developer<br /><br />
+          Hey! I am looking for a job! On this page You will find all necessary
+          information with details. Probaly You landed here because of my CV
+          right? Then I am glad You are still interested in my application. I
+          would like to get a job where I could develop myself and gain
+          experience in software developement field. I am open to new
+          technologies and hyped to learn them. As You can see down there, I
+          have done some small projects. Hope You will enjoy reading about me
+          and call me to engage job interview.
+        </th>
+      </tr>
+    </table>
+
+    <br />
+  </div>
+
+  <div id="myProjects" class="toolbarBannerTop dark-primary-color"></div>
+  <div class="toolbar">
+    <div class="toolbarBannerBody default-primary-color">
+      <div class="toolbarContent">
+        <h1 class="toolbarMark">My Projects</h1>
+      </div>
+    </div>
+  </div>
+
+  <div id="CV_PL" class="toolbarBannerTop dark-primary-color"></div>
+  <div class="toolbar">
+    <div class="toolbarBannerBody default-primary-color">
+      <div class="toolbarContent">
+        <h1 class="toolbarMark">CV-PL</h1>
+      </div>
+    </div>
+  </div>
+
+  <object class="CV_PDF" data="assets/CV.pdf" type="application/pdf">
+    <p>Sorry, the PDF couldn't be displayed :(</p>
+  </object>
+
+  <div id="CV_EN" class="toolbarBannerTop dark-primary-color"></div>
+  <div class="toolbar">
+    <div class="toolbarBannerBody default-primary-color">
+      <div class="toolbarContent">
+        <h1 class="toolbarMark">CV-EN</h1>
+      </div>
+    </div>
+  </div>
+
+  <object class="CV_PDF" data="assets/CV_ENG.pdf" type="application/pdf">
+    <p>Sorry, the PDF couldn't be displayed :(</p>
+  </object>
+
+  <div id="contact" class="toolbarBannerTop dark-primary-color"></div>
+  <div class="toolbar">
+    <div class="toolbarBannerBody default-primary-color">
+      <div class="toolbarContent">
+        <h1 class="toolbarMark">Contact</h1>
+      </div>
+    </div>
+  </div>
+  <br /><br />
+  <br /><br />
+  <div class="contactText secondary-text-color">
+    Email: <a href="mailto:w.grudzina@gmail.com">w.grudzina@gmail.com</a
+    ><br /><br />
+    Tel. : 668 070 667<br /><br />
+    LinkedIn:
+    <a
+      href="http://www.linkedin.com/in/wiktor-grudzina"
+      target="_blank"
+      title="Wiktor Grudzina"
+      >Wiktor Grudzina</a
+    >
+  </div>
+  <br /><br />
+  <br /><br />
+</div>
